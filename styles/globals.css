@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   background: #1F3946;
   min-height: 200vh;
+  cursor: default;
 }
 
 body .footer {

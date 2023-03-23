@@ -32,10 +32,10 @@ export default function Home() {
       <Container>
         <div className='h-[650px] my-auto relative'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-between'>
-            <div className='w-8/12 space-y-4'>
+            <div className='w-8/12 space-y-5'>
               <p className='text-white font-semibold text-5xl animate-bounce'>Hello!</p>
               <p className='text-white font-bold text-7xl'>{"It's me, Bayu"}</p>
-              <p className='text-white italic font bold'>{
+              <p className='text-white  font bold'>{
                 "As a Front End Developer, my expertise lies in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I take pride in developing impactful web applications that cater to the needs of others."
                 }
               </p>
