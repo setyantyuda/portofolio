@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { Bubble } from "@/components/bubble"
 import { Contact } from "@/container/home/contact"
 import { Footer } from "@/container/home/footer"
 import { TechStack } from "@/container/home/stack"
