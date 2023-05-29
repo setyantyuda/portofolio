@@ -11,7 +11,7 @@ const Home = () => {
         <div className='w-full flex justify-between pt-48 hero'>
           <div className='md:w-8/12 space-y-6'>
             <p className='font-semibold text-2xl animate-bounce'>Hello!</p>
-            <p className='font-bold md:text-7xl text-5xl'>{"It's me, Bayu"}</p>
+            <p className='font-bold md:text-7xl md:h-20 h-32 text-6xl text-transparent bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text'>{"It's me, Bayu"}</p>
             <p className=''>
                 {"I'm"} a passionate Front-end Developer based <br/> in Depok, Indonesia 📍
             </p>
@@ -20,13 +20,15 @@ const Home = () => {
               <BsGithub size={32}/>
             </div>
           </div>
-          <div className='profile-pic md:block hidden'></div>
+          <div className="profile-wrap">
+            <div className='profile-pic md:block hidden'></div>
+          </div>
         </div>
         <div className="flex space-x-8 mt-12">
           <div className="my-auto font-semibold text-lg w-2/12">
             Tech Stack
           </div>
-          <div className="bg-neutral-800 h-[2px] w-full my-auto"></div>
+          <div className="bg-gradient-to-r from-purple-300 to-emerald-400 h-[2px] w-full my-auto"></div>
         </div>
         <div className="grid md:grid-cols-7 grid-cols-3 mt-5 gap-4">
           <div className="bg-white mx-auto shadow-xl h-20 w-20 rounded-full p-6">
