@@ -20,8 +20,8 @@ const Home = () => {
               <BsGithub size={32}/>
             </div>
           </div>
-          <div className="profile-wrap">
-            <div className='profile-pic md:block hidden'></div>
+          <div className="profile-wrap md:block hidden">
+            <div className='profile-pic'></div>
           </div>
         </div>
         <div className="flex space-x-8 mt-12">
