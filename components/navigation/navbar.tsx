@@ -1,16 +1,27 @@
-import { Container } from "@/container/container"
+import { Link } from "react-scroll"
 
 export const Navbar = () => {
   return (
-    <div className="py-6 bg-[#e9eac0] w-full fixed z-9999 shadow-2xl">
-        <Container>
-            <div className="flex space-x-8 text-black justify-end font-semibold">
-                <span>Home</span>
-                <span>About</span>
-                <span>Work</span>
-                <span>Contact</span>
-            </div>
-        </Container>
+    <div className="py-6 w-full bg-white fixed z-9999 shadow-xl px-24">
+      <div className="flex text-black justify-between font-semibold">
+        <div className="text-2xl cursor-pointer">
+          Bayu.dev
+        </div>
+        <div className="space-x-8 my-auto">
+          <span className="cursor-pointer">
+            <Link to="hero" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
+          </span>
+          <span className="cursor-pointer">
+            <Link to="about" spy={true} smooth={true} offset={-250} duration={500}>About</Link>
+          </span>
+          <span className="cursor-pointer">
+            <Link to="work" spy={true} smooth={true} offset={-250} duration={500}>Work</Link>
+          </span>
+          <span className="cursor-pointer">
+            <Link to="contact" spy={true} smooth={true} offset={-250} duration={500}>Contact</Link>
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
