@@ -2,7 +2,7 @@ import { Link } from "react-scroll"
 
 export const Navbar = () => {
   return (
-    <div className="py-6 w-full bg-white fixed z-9999 shadow-xl px-6 md:px-24">
+    <div className="py-6 w-full bg-white fixed z-50 shadow-xl px-6 md:px-24">
       <div className="flex text-black justify-between font-semibold">
         <div className="text-2xl cursor-pointer hover:text-transparent bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text ease-in-out duration-300 transition-color">
           <Link to="hero" spy={true} smooth={true} offset={0} duration={500}>
