@@ -5,7 +5,9 @@ export const Navbar = () => {
     <div className="py-6 w-full bg-white fixed z-9999 shadow-xl px-24">
       <div className="flex text-black justify-between font-semibold">
         <div className="text-2xl cursor-pointer">
-          Bayu.dev
+          <Link to="hero" spy={true} smooth={true} offset={0} duration={500}>
+            Bayu.dev
+          </Link>
         </div>
         <div className="space-x-8 my-auto">
           <span className="cursor-pointer">
