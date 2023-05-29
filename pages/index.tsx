@@ -7,11 +7,11 @@ import { MdEmail } from "react-icons/md"
 const Home = () => {
   return (
     <>
-      <div className='mx-auto max-w-[1000px] mb-16'>
+      <div className='mx-auto max-w-[1000px] px-6 md:px-0 mb-16'>
         <div className='w-full flex justify-between pt-48 hero'>
-          <div className='w-8/12 space-y-6'>
+          <div className='md:w-8/12 space-y-6'>
             <p className='font-semibold text-2xl animate-bounce'>Hello!</p>
-            <p className='font-bold text-7xl'>{"It's me, Bayu"}</p>
+            <p className='font-bold md:text-7xl text-5xl'>{"It's me, Bayu"}</p>
             <p className=''>
                 {"I'm"} a passionate Front-end Developer based <br/> in Depok, Indonesia 📍
             </p>
@@ -20,7 +20,7 @@ const Home = () => {
               <BsGithub size={32}/>
             </div>
           </div>
-          <div className='profile-pic'></div>
+          <div className='profile-pic md:block hidden'></div>
         </div>
         <div className="flex space-x-8 mt-12">
           <div className="my-auto font-semibold text-lg w-2/12">
@@ -28,7 +28,7 @@ const Home = () => {
           </div>
           <div className="bg-neutral-800 h-[2px] w-full my-auto"></div>
         </div>
-        <div className="grid grid-cols-7 mt-5 gap-4">
+        <div className="grid md:grid-cols-7 grid-cols-3 mt-5 gap-4">
           <div className="bg-white mx-auto shadow-xl h-20 w-20 rounded-full p-6">
             <img alt="HTML5" src="icon/html.png" />
           </div>
@@ -65,8 +65,8 @@ const Home = () => {
 
         {/* About section*/}
         <div className="mt-24 space-y-3 bg-neutral-100 py-16 about">
-          <div className='mx-auto max-w-[1000px]'>
-            <div className="flex space-x-14">
+          <div className='mx-auto max-w-[1000px] px-6 md:px-0'>
+            <div className="md:flex md:space-x-14 space-y-8 md:space-y-0">
               <Image src="/about.jpg" alt="about" width={450} height={400} className="rounded-xl"/>
               <div className="space-y-3">
                 <div className="text-3xl font-semibold text-neutral-400">About me</div>
@@ -87,7 +87,7 @@ const Home = () => {
           </div>
         </div>
         
-        <div className='mx-auto max-w-[1000px] mb-32 contact'>
+        <div className='mx-auto max-w-[1000px] px-6 md:px-0 mb-32 contact'>
           {/* Contact section*/}
           <div className="mt-24 space-y-3">
             <div className="text-3xl font-semibold text-neutral-400">Contact</div>
@@ -109,10 +109,10 @@ const Home = () => {
           </div>
         </div>
 
-      <div className="bg-neutral-800 h-32 text-white">
-        <div className="mx-auto max-w-[1000px] flex justify-between h-full">
-          <div className="my-auto">Copyright © 2023. All rights are reserved</div>
-          <div className="flex space-x-5 my-auto">
+      <div className="bg-neutral-800 h-32 text-white pt-6 md:pt-0">
+        <div className="mx-auto max-w-[1000px] px-6 md:px-0 md:flex justify-between h-full space-y-4 md:space-y-12">
+          <div className="my-auto md:text-left text-center">Copyright © 2023. All rights are reserved</div>
+          <div className="flex space-x-5 justify-center my-auto">
             <BsLinkedin size={32}/>
             <BsGithub size={32}/>
           </div>
