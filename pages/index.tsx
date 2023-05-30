@@ -35,8 +35,19 @@ const Home = () => {
         <div className="space-y-3 bg-neutral-100 py-16 about">
           <div className='mx-auto max-w-[1000px] px-6 md:px-0'>
             <div className="md:flex md:space-x-14 space-y-8 md:space-y-0">
-              <Image src="/about.jpg" alt="about" width={450} height={400} className="rounded-xl shadow-2xl"/>
-              <div className="space-y-3">
+              <div className="image-about-wrap md:hover:scale-110 md:w-6/12">
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <span className="hover-box"></span>
+                <div className="image-about"></div>
+              </div>
+              <div className="space-y-3 md:w-6/12 md:py-12">
                 <div className="text-3xl font-semibold text-neutral-400">About me</div>
                 <h3 className="text-xl font-semibold">
                   &quot;{"Every line of code tells a story"}&quot;
